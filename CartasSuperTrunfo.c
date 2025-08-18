@@ -7,13 +7,15 @@ int main(){
     char estado [20];
     char codigo [20];
     char cidade [20];
-    int populacao;
-    float area;
-    float pib;
-    int pontos;
-    float dpopulacional;
-    float pibpercapita;
-
+    unsigned long int populacao1, populacao2;
+    float area1, area2;
+    float pib1, pib2;
+    int pontos1, pontos2;
+    float dpopulacional1, dpopulacional2;
+    float pibpercapita1, pibpercapita2;
+    float superpoder1, superpoder2;
+    int resultado1, resultado2;
+    
 
 
 
@@ -29,19 +31,23 @@ int main(){
     scanf("%s", cidade);
 
     printf("Digite o numero da populaçao do estado\n");
-    scanf("%d", &populacao);
+    scanf("%ld", &populacao1);
 
     printf("Digite o tamanho da área\n");
-    scanf("%f", &area);
+    scanf("%f", &area1);
 
     printf("Digite o Pib do Estado\n");
-    scanf("%f", &pib);
+    scanf("%f", &pib1);
 
     printf("Digite a quantidade de pontos turisticos\n");
-    scanf("%d", &pontos);
+    scanf("%d", &pontos1);
 
-    dpopulacional = (float) populacao / area;
-    pibpercapita = (float) populacao / pib;
+    dpopulacional1 = (float) populacao1 / area1;
+    pibpercapita1 = (float) populacao1 / pib1;
+
+    superpoder1 = (float) populacao1 + area1 + pib1 + pontos1 + pibpercapita1 / dpopulacional1; 
+
+
 
     //Saida de dados da carta 1
 
@@ -49,12 +55,13 @@ int main(){
 
     printf("Estado: %s\n",estado);
     printf("Código: %s\n", codigo);
-    printf("População: %d\n", populacao);
-    printf("Area: %f\n", area);
-    printf("Pib: %f\n", pib);
-    printf("Quantidade de pontos turisticos: %d\n", pontos);
-    printf("Densidade populacional: %.2f\n", dpopulacional);
-    printf("Pib percapita: %.2f\n", pibpercapita);
+    printf("População: %ld\n", populacao1);
+    printf("Area: %f\n", area1);
+    printf("Pib: %f\n", pib1);
+    printf("Quantidade de pontos turisticos: %d\n", pontos1);
+    printf("Densidade populacional: %.2f\n", dpopulacional1);
+    printf("Pib percapita: %.2f\n", pibpercapita1);
+    printf("Super poder: %f\n", superpoder1);
 
 
     //Entrada de Dados carta 2
@@ -69,19 +76,22 @@ int main(){
     scanf("%s", cidade);
 
     printf("Digite o numero da populaçao do estado\n");
-    scanf("%d", &populacao);
+    scanf("%ld", &populacao2);
 
     printf("Digite o tamanho da área\n");
-    scanf("%f", &area);
+    scanf("%f", &area2);
 
     printf("Digite o Pib do Estado\n");
-    scanf("%f", &pib);
+    scanf("%f", &pib2);
 
     printf("Digite a quantidade de pontos turisticos\n");
-    scanf("%d", &pontos);
+    scanf("%d", &pontos2);
 
-    dpopulacional = (float) populacao / area;
-    pibpercapita = (float) populacao / pib;
+    dpopulacional2 = (float) populacao2 / area2;
+    pibpercapita2 = (float) populacao2 / pib2;
+
+    superpoder2 = (float) populacao2 + area2 + pib2 + pontos2 + pibpercapita2 / dpopulacional2;
+ 
 
     //Saida de dados carta 2
 
@@ -89,12 +99,31 @@ int main(){
 
     printf("Estado: %s\n",estado);
     printf("Código: %s\n", codigo);
-    printf("População: %d\n", populacao);
-    printf("Area: %f\n", area);
-    printf("Pib: %f\n", pib);
-    printf("Quantidade de pontos turisticos: %d\n", pontos);
-    printf("Densidade populacional: %.2f\n", dpopulacional);
-    printf("Pib percapita: %.2f\n", pibpercapita);
+    printf("População: %ld\n", populacao2);
+    printf("Area: %f\n", area2);
+    printf("Pib: %f\n", pib2);
+    printf("Quantidade de pontos turisticos: %d\n", pontos2);
+    printf("Densidade populacional: %.2f\n", dpopulacional2);
+    printf("Pib percapita: %.2f\n", pibpercapita2);
+    printf("Super poder: %f\n", superpoder2);
+
+    //Comparacão de cartas
+
+    printf("populacao 1 > populacao2: %d\n", populacao1 > populacao2 );
+    printf("Area 1 > Area 2: %f\n", area1 > area2);
+    printf("pib 1 > pib2: %f\n", pib1 > pib2);
+    printf("dpopulacional1 < dpopulacional2: %f\n",dpopulacional1 < dpopulacional2);
+    printf("pibpercapita1 > pibpercapita2 %f\n", pibpercapita1 > pibpercapita2);
+    printf("Super poder 1 > super poder 2: %f\n", superpoder1 > superpoder2);
+   
+
+
+    
+
+
+
+
+
 
 
 
