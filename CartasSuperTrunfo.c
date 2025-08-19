@@ -109,13 +109,13 @@ int main(){
 
     //Comparacão de cartas
 
-    printf("populacao 1 > populacao2: %d\n", populacao1 > populacao2 );
-    printf("Area 1 > Area 2: %f\n", area1 > area2);
-    printf("pib 1 > pib2: %f\n", pib1 > pib2);
-    printf("dpopulacional1 < dpopulacional2: %f\n",dpopulacional1 < dpopulacional2);
-    printf("pibpercapita1 > pibpercapita2 %f\n", pibpercapita1 > pibpercapita2);
-    printf("Super poder 1 > super poder 2: %f\n", superpoder1 > superpoder2);
-   
+    if (superpoder1 > superpoder2) {printf("Carta 1 venceu");
+    }
+    else{printf("carta 2 venceu");
+    
+    }
+ 
+
 
 
     
