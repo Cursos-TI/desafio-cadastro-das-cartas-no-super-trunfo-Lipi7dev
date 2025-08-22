@@ -107,12 +107,12 @@ int main(){
 
     //Comparacão de cartas
 
-    Printf("1 População\n");
+    printf("1 População\n");
     printf("2 Área\n");
     printf("3 pib\n");
     printf("4 Quantidade de pontos turísticos\n");
-    printf("5 Densidade populacional\n");
-    printf("6 Pib percapita\n");
+    printf("5 Pib percapita\n");
+    printf("6 Densidade populacional\n");
     
     
     //Sistema de switch
@@ -126,12 +126,12 @@ int main(){
         printf ("Você escolheu população\n");
         if (populacao1 > populacao2){
             printf("carta venceu\n");
-            }else if (populacao1 == populacao2){
+        }else if (populacao1 == populacao2){
             printf("Impate");
-            } else{ 
+        } else{ 
             printf("Carta 2 venceu");
-            }
-            break;
+        }
+        break;
 
 
     case 2:
@@ -200,6 +200,8 @@ int main(){
         printf("Opção invalida");
 
 }
+
+return 0;
 }
     
 
